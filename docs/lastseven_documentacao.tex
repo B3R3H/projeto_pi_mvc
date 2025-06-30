@@ -1,0 +1,155 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{float}
+
+\geometry{a4paper, margin=2.5cm}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.5em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Last Seven}
+\lhead{Documentação}
+\rfoot{\thepage}
+
+\title{\textbf{Sistema Web Last Seven}}
+\author{
+    Nicholas Bollatte, Eduarda Pinheiro, João Vitor, Vinícius Moreira,\\
+    Adaiana Duarte, Kleber Lucas, Gean Gregy\\
+    Senac Esplanada – Técnico em Informática\\
+    Porto Velho - RO, 25 de Junho de 2025
+}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+Este projeto descreve o desenvolvimento do site web \textit{Last Seven}, criado com o objetivo de apresentar uma equipe fictícia composta por sete integrantes, cada qual com seu próprio portfólio profissional. O site também permite o contato de clientes através de um formulário funcional, integrando tecnologias como HTML, CSS, JavaScript, PHP e banco de dados MySQL. Além disso, foi desenvolvido um sistema de acesso remoto em Java, restrito aos membros da equipe, responsável por operações administrativas no banco de dados como inserção, remoção, envio e edição de registros. O sistema visa proporcionar uma interface moderna, organizada e funcional, servindo como vitrine digital e ponto de contato com potenciais interessados nos serviços prestados pela equipe.
+\end{abstract}
+
+\section{Introdução}
+Com o avanço das tecnologias digitais e da comunicação online, o uso de portfólios profissionais digitais tornou-se essencial.
+O objetivo geral do projeto é criar um site institucional integrado a um app desktop para exibição e gerenciamento de perfis profissionais.
+
+Para alcançar esse objetivo, definiram-se os seguintes objetivos específicos:
+\begin{itemize}
+    \item Exibir perfis individuais;
+    \item Permitir o envio de mensagens por formulário;
+    \item Possibilitar a consulta interna via Java.
+\end{itemize}
+
+\section{Fundamentação Teórica}
+Foram utilizadas as seguintes tecnologias:
+\begin{itemize}
+    \item HTML5, CSS3 e JavaScript: estruturação, estilo e interatividade;
+    \item PHP e MySQL: back-end e banco de dados;
+    \item Java com JDBC: acesso remoto via aplicação desktop.
+\end{itemize}
+
+\section{Metodologia}
+O sistema foi desenvolvido em equipe. Cada integrante contribuiu com partes específicas do projeto, dividindo-se entre front-end, back-end, banco de dados e documentação. As ferramentas utilizadas incluíram VS Code, XAMPP, e testes locais.
+
+\section{Desenvolvimento do Sistema}
+\subsection{Requisitos Funcionais}
+\begin{itemize}
+    \item RF01: Exibir 7 perfis personalizados;
+    \item RF02: Formulário de contato com nome, e-mail e mensagem;
+    \item RF03: Armazenar dados no banco MySQL via PHP;
+    \item RF04: Aplicativo Java acessando os dados.
+\end{itemize}
+
+\subsection{Requisitos Não Funcionais}
+\begin{itemize}
+    \item Site responsivo;
+    \item Tempo de resposta inferior a 3 segundos;
+    \item Codificação UTF-8;
+    \item Segurança contra injeções SQL.
+\end{itemize}
+
+\subsection{Estrutura de Diretórios}
+\begin{verbatim}
+/css
+/js
+/php
+/img
+/java/LastSevenRemoteAdmin
+index.html
+\end{verbatim}
+
+\subsection{Telas do Sistema}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{lastseven-abaprincipal.png}
+    \caption{Tela Principal do Sistema}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{telasejabemvindo.png}
+    \caption{Tela de Boas-Vindas}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{abaequipe.png}
+    \caption{Aba Equipe}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{aba-projetos.png}
+    \caption{Aba Projetos}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{aba-pedido-entraemcontato.png}
+    \caption{Tela de Contato}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{formulario-php.png}
+    \caption{Formulário de Solicitação de Serviço}
+\end{figure}
+
+\subsection{Diagramas}
+\textbf{Inserir aqui o Diagrama de Casos de Uso.}
+
+\textbf{Inserir aqui o Diagrama Entidade-Relacionamento (DER).}
+
+\section{Resultados e Avaliação}
+O sistema atendeu todos os requisitos previstos. As funcionalidades foram validadas por testes manuais e simulações reais de uso.
+
+\section{Conclusão}
+O projeto cumpriu seu papel formativo e funcional. Além de apresentar a equipe Last Seven ao público externo, proporcionou uma ferramenta administrativa eficaz via Java. O desenvolvimento colaborativo foi essencial para o sucesso da entrega.
+
+\section*{Apêndice – Manual do Usuário}
+\subsection*{Uso do Site (Visitantes)}
+\begin{enumerate}
+    \item Acessar o site pelo navegador;
+    \item Navegar entre os perfis da equipe;
+    \item Preencher e enviar o formulário de contato.
+\end{enumerate}
+
+\subsection*{Uso do App Java (Integrantes)}
+\begin{enumerate}
+    \item Executar o app Java com acesso ao banco;
+    \item Visualizar e manipular os dados recebidos do site;
+    \item Proteger o acesso com autenticação.
+\end{enumerate}
+
+\end{document}
