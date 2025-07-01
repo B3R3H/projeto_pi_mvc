@@ -292,20 +292,17 @@ button:hover {
   box-shadow: 0 0 10px #00ffff;
   transform: translateY(-2px);
 }
-.main-contato {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #00ffff;
-  border-radius: 20px;
-  padding: 30px;
-  width: 400px;
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
-  transition: transform 0.3s ease;
-  backdrop-filter: blur(10px);
+.container-contato {
+  border: 2px solid #00ffff; /* cor da borda azul-ciano */
+  border-radius: 15px;        /* cantos arredondados */
+  padding: 30px;              /* espaço interno */
+  background-color: rgba(0, 0, 0, 0.7); /* fundo escuro com transparência */
+  width: fit-content;         /* tamanho do conteúdo */
+  margin: 0 auto;             /* centraliza horizontalmente */
+  text-align: center;         /* alinha texto e botões */
+  box-shadow: 0 0 20px #00ffff; /* sombra para destacar */
 }
 
-.main-contato:hover {
-  transform: scale(1.05);
-}
 
 .link-ancora {
   display: flex;
