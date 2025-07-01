@@ -228,18 +228,23 @@ main h3 {
 }
 /* FORMULÁRIO */
 .formulario {
-  background-color: rgba(0, 40, 50, 0.8);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* evita forçar o centro vertical */
+  max-width: 400px;
   width: 100%;
+  padding: 20px;
+  margin: 40px auto;             /* espaço externo acima/abaixo */
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px #00ffff;
+  height: auto;                 /* IMPORTANTE: não forçar 100vh */
+  text-align: left;
 }
 
-.formulario h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #00ffff;
-}
 
 /* CAMPOS DO FORMULÁRIO */
 form {
@@ -303,6 +308,25 @@ button:hover {
   box-shadow: 0 0 20px #00ffff; /* sombra para destacar */
 }
 
+.voltar-pequeno {
+  font-size: 0.9rem;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #00ffff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.voltar-pequeno:hover {
+  background-color: #00ffff;
+  color: black;
+}
 
 .link-ancora {
   display: flex;
