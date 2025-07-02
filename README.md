@@ -39,18 +39,35 @@ salvar_formulario.php – Backend que salva os dados no MySQL
 
 estilo_index.css – Estilos visuais da página
 
-📂 Exemplo de estrutura:
-project/
+PROJETO_PI_MVC/
+├── controller/
+│   └── salvar_formulario.php
+├── docs/
+│   ├── database/
+│   │   ├── Diagram table.png
+│   │   ├── Model logic script.png
+│   │   ├── script.sql
+│   │   └── table.mwb
+│   ├── Documentacao Last Seven.docx
+│   ├── lastseven_documentacao.tex
+│   └── Modelo de SRS.docx
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   ├── imagens/
+│   └── js/
+│       └── msg_formulario.js
+├── view/
+│   ├── equipes/
+│   │   ├── Perfil_equipe
+│   │   └── equipe.html
+│   ├── pedidos/
+│   │   ├── contato.html
+│   │   └── formulario.html
+│   └── projetos/
+│       └── projetos.html
 ├── index.html
-├── src/
-│   ├── estilo_index.css
-│   ├── script.js
-│   ├── salvar_formulario.php
-├── imagens/
-├── abas/
-│   ├── equipes/
-│   ├── projetos/
-│   └── pedidos/
+└── README.md
 
 🖥️ Aplicativo Java Desktop
 A aplicação Java acessa os dados salvos no banco de dados MySQL e permite a visualização, filtragem e exportação dos pedidos recebidos. Pode ser usada por administradores ou equipe interna para análises.
